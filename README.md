@@ -39,6 +39,13 @@ make ..
 
 Исполняемые файлы будут лежать в `build` в соответствующих поддиректориях
 
+Чтобы после этого собрать `deb` пакет:
+```bash
+cp openwith/src/openwith ../daemon/deb/openwith/usr/local/bin
+cd ../daemon/deb
+dpkg-deb --build openwith
+```
+
 ### Example
 
 Собрать проект, запустить демона, зарегистрировать `pluma` для  `txt` и попытаться открыть `a.txt`:
