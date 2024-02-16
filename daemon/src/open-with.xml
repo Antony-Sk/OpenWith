@@ -1,0 +1,14 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+        "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node name="/ru/innop/OpenWith/Daemon">
+    <interface name="ru.innop.OpenWith.RegisterInterface">
+        <method name="reg_format">
+            <arg name="format" type="s" direction="in"/>
+            <arg name="exec_path" type="s" direction="in"/>
+            <arg name="exec_args" type="as" direction="in"/>
+        </method>
+        <method name="open">
+            <arg name="format" type="s" direction="in"/>
+        </method>
+    </interface>
+</node>
